@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; */
+    font-family: -apple-system, BlinkMacSystemFont, "Comic Sans Ms";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+}
+
+#root {
+    margin: 0;
+    /* background-color: rgb(242, 242, 242); */
+    width: 300px;
+    border-radius: 5px;
+    /* border: solid 1px rgb(226, 226, 226); */
+    width: 95%;
+    height: 95%;
+}
+
+.TodoApp {
+    padding: 10px;
+    background-color: aquamarine;
+    width: 200px;
+    position: absolute;
+}
+
+input[type="checkbox"]:checked {
+    cursor: pointer;
+}
+
+.TodoApp button {
+    background-color: cornflowerblue;
+    border: thin solid dodgerblue;
+    border-radius: 0.125rem;
+    color: white;
+    padding: 0.2rem 0.4rem;
+    cursor: pointer;
+}
+.TodoApp .button-icon {
+    vertical-align: top;
+    margin: 0 0.2rem;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-family: apple color emoji, segoe ui emoji, noto color emoji, android emoji, emojisymbols, emojione mozilla, twemoji mozilla, segoe ui symbol;
+    font-size: 0.9rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.TodoApp .button-icon:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.TodoApp ul li .button-icon {
+    font-size: 0.9rem;
+    visibility: hidden;
+}
+
+.TodoApp ul li:hover .button-icon {
+    font-size: 0.9rem;
+    visibility: visible;
+}
+
+.TodoApp ul li.done {
+    text-decoration: line-through;
+    color: red;
+}
+
+.listdiv {
+    /* display: flex;
+    flex-flow: row wrap; */
+    position: relative;
+}
+
+.form {
+    font-family: "Comic Sans Ms";
+    margin-top: 10px;
+}
+
+.button-delete {
+    position: relative;
+    left: 195px;
+    bottom: 43px;
+}
+
+.drag-Handle:hover {
+    cursor: grab;
+}

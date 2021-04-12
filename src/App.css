@@ -1,0 +1,77 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: red;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.TodoApp button {
+    background-color: cornflowerblue;
+    border: thin solid dodgerblue;
+    border-radius: 0.125rem;
+    color: white;
+    padding: 0.2rem 0.4rem;
+}
+.TodoApp .button-icon {
+    vertical-align: top;
+    margin: 0 0.2rem;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-family: apple color emoji, segoe ui emoji, noto color emoji, android emoji, emojisymbols, emojione mozilla, twemoji mozilla, segoe ui symbol;
+    font-size: 0.9rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.TodoApp .button-icon:hover {
+    text-decoration: none;
+}
+
+.TodoApp ul li .button-icon {
+    font-size: 0.9rem;
+    visibility: hidden;
+}
+
+.TodoApp ul li:hover .button-icon {
+    font-size: 0.9rem;
+    visibility: visible;
+}
